@@ -17,7 +17,7 @@ namespace RESTEnvironmentVariablesCD.Managers.Tests
 
             EnvironmentVariable one = _manager.GetByName("MY_NAME");
             Assert.IsNotNull(one);
-            Assert.AreEqual("AndersKKK", one.Value);
+            Assert.AreEqual("Anders", one.Value);
         }
     }
 }
