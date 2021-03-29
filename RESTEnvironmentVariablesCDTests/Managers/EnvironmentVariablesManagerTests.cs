@@ -13,6 +13,7 @@ namespace RESTEnvironmentVariablesCD.Managers.Tests
         public void GetTest()
         {
             List<EnvironmentVariable> all = _manager.GetAll();
+            Assert.AreEqual("kdk", string.Join(", ", all));
             Assert.IsTrue(all.Exists(variable => variable.Key == "MY_NAME"));
 
             EnvironmentVariable one = _manager.GetByName("MY_NAME");
